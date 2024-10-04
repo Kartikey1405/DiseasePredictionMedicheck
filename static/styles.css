@@ -103,6 +103,27 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Styles for the consult now button */
+#book-test {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#labtest-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#labtest-btn:hover {
+    background-color: #0056b3;
+}
+
 /* Disclaimer styles */
 #disclaimer {
     margin-top: 30px;
