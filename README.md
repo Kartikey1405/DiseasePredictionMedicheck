@@ -50,20 +50,20 @@ To set up the project locally, follow these steps:
 
 Clone the repository:
 
-bash
+'''bash
 Copy code
 git clone <repository-url>
 cd symptom-checker
 Install the required packages:
 
-bash
+'''bash
 Copy code
 pip install -r requirements.txt
 Set up your Cloudant credentials in the environment variables or directly in the code.
 
 Run the application:
 
-bash
+'''bash
 Copy code
 python app.py
 Access the application at http://127.0.0.1:5000.
