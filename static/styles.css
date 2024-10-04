@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Result Styles */
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Styles for the consult now button */
+#consult-now {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#consult-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#consult-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Disclaimer styles */
+#disclaimer {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    max-width: 500px;
+}
+
+#disclaimer p {
+    margin: 0;
+    line-height: 1.5;
+}
