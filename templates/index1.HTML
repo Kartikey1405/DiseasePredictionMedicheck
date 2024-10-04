@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <h1>MEDI CHECK</h1>
+</head>
+<body>
+    <h1>Healthcare Consultant</h1>
+    
+    <form id="symptom-form">
+        <label for="symptoms">Enter Symptoms (comma-separated):</label>
+        <input type="text" id="symptoms" name="symptoms" required>
+        <button type="submit">Predict Disease</button>
+    </form>
+    
+    <div id="result"></div>
+
+    <!-- New Consult Now button -->
+    <div id="consult-now">
+        <a href="https://www.apollo247.com/doctors/quick-book-listing?consultMode=ONLINE&location=Jaipur&id=615ebc75-4172-4f46-9ba0-b3688c053fcc&date=2024-10-04&name=General_Physician/_Internal_Medicine">
+        <button id="consult-btn">Consult Now</button>
+    </a>
+    </div>
+
+    <!-- Disclaimer -->
+    <div id="disclaimer">
+        <p>This AI-powered diagnosis is for informational purposes only and should not be considered as professional medical advice. Always consult with a qualified healthcare provider for proper diagnosis and treatment.</p>
+    </div>
+
+    <script>
+        document.getElementById('symptom-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const symptoms = document.getElementById('symptoms').value.split(',').map(s => s.trim());
+            fetch('/predict-disease', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ symptoms })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerText = `Predicted Disease: ${data.disease}`;
+            });
+        });
+    </script>
+</body>
+</html>
