@@ -19,23 +19,33 @@ Technologies Used
 Programming Languages:
 
 Python: Backend logic and machine learning model implementation.
+
 JavaScript: Front-end interactivity.
+
 HTML/CSS: User interface development.
+
 Framework:
 
 Flask: Web framework for managing backend and APIs.
+
 Machine Learning:
 
 Scikit-learn: Library used for implementing the KNN algorithm.
+
 Data Storage:
 
 Cloudant: NoSQL database for storing user consultations and symptom data.
+
 Libraries:
 
 NumPy: For numerical operations and data manipulation.
+
 Pandas: For data handling and preprocessing.
+
 Joblib: For saving and loading the trained model.
+
 Installation
+
 To set up the project locally, follow these steps:
 
 Clone the repository:
@@ -59,16 +69,10 @@ python app.py
 Access the application at http://127.0.0.1:5000.
 
 Usage
+
 Input symptoms in the provided field on the main page.
+
 Click on "Check Disease" to receive predictions and recommendations.
-Users can view educational resources related to their symptoms.
-Future Scope
-Feature Expansion: Adding comprehensive health assessments and personalized health insights.
-Integration with Wearable Devices: Allowing real-time monitoring of biometric data.
-Telehealth Integration: Enabling direct consultations with healthcare providers.
-Global Expansion: Localizing the platform for different languages and regions.
-Contributing
-Contributions are welcome! If you have suggestions for improvements or find bugs, please create an issue or submit a pull request.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details
