@@ -4,7 +4,7 @@ import numpy as np
 
 def load_model():
     model = joblib.load('disease_prediction_model.pkl')
-    data = pd.read_csv('disease_symptoms.csv')
+    data = pd.read_csv('more_extended_disease_symptoms.csv')
     symptom_columns = data.columns[:-1]
     return model, symptom_columns
 

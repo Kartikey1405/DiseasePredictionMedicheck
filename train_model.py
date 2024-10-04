@@ -3,7 +3,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import joblib
 
 # Load and preprocess the dataset
-data = pd.read_csv('disease_symptoms.csv')
+data = pd.read_csv('more_extended_disease_symptoms.csv')
 X = data.drop(columns=['disease'])
 y = data['disease']
 
