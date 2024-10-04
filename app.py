@@ -66,3 +66,4 @@ def predict_disease():
 if __name__ == '__main__':
     upload_dataset_to_cloudant()
     app.run(port=5000)
+
