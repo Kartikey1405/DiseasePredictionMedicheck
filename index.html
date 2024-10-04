@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Chatbot</title>
+</head>
+<body>
+    <h1>Healthcare Consultation Chatbot</h1>
+    <form id="symptom-form">
+        <label for="symptoms">Enter Symptoms (comma-separated):</label>
+        <input type="text" id="symptoms" name="symptoms" required>
+        <button type="submit">Predict Disease</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('symptom-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const symptoms = document.getElementById('symptoms').value.split(',').map(s => s.trim());
+            fetch('/predict-disease', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ symptoms })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerText = `Predicted Disease: ${data.disease}`;
+            });
+        });
+    </script>
+</body>
+</html>
