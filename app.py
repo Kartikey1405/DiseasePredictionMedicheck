@@ -7,6 +7,8 @@ import pandas as pd
 import json
 from model import preprocess_symptoms, load_model
 from flask_cors import CORS
+import numpy as np
+
 
 app = Flask(__name__)
 CORS(app)  # This will allow CORS for all origins and headers
@@ -47,21 +49,35 @@ def home():
 def predict_disease():
     symptoms = request.json.get('symptoms')
     input_data = preprocess_symptoms(symptoms, symptom_columns)
-    prediction = model.predict([input_data])
+
+    # Change the input_data to a DataFrame
+    input_df = pd.DataFrame([input_data], columns=symptom_columns)
+
+    # Make predictions
+    probabilities = model.predict_proba(input_df)*100  # Get the probabilities
+
+    # Get the top 2 predictions
+    top_2_indices = np.argsort(probabilities[0])[-2:][::-1]  # Sort and get top 2
+    top_2_diseases = model.classes_[top_2_indices]  # Get the disease names
+    top_2_probabilities = probabilities[0][top_2_indices]  # Get corresponding probabilities
+
+    
 
     # Store the consultation in Cloudant
     try:
         data = {
             'symptoms': symptoms,
-            'predicted_disease': prediction[0]
+            'predicted_diseases': top_2_diseases.tolist(),
+            'probabilities': top_2_probabilities.tolist()
         }
         new_document = db.create_document(data)
         if new_document.exists():
-            return jsonify({'disease': prediction[0]})
+            return jsonify({'diseases': top_2_diseases.tolist(), 'probabilities': top_2_probabilities.tolist()})
         else:
             return jsonify({'error': 'Failed to store consultation data'})
     except CloudantException as e:
         return jsonify({'error': f'Cloudant error: {e}'})
+
 
 if __name__ == '__main__':
     upload_dataset_to_cloudant()
