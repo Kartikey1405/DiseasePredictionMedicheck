@@ -4,6 +4,8 @@ The AI-Powered Symptom Checker is a web application designed to analyze user-rep
 
 Demonstration video: https://youtu.be/W9iGcD9pTzU?si=Vrtj20tWelxv2z9s
 
+PPT presentation: https://mujmanipal-my.sharepoint.com/:p:/g/personal/kanak_23fe10cse00232_muj_manipal_edu/EUVmqZHuWjhMsgUBYEj5ZKoB_HEgNXKp5fxr8ZdwuaikRg?e=ZvgzEY
+
 Features
 
 Symptom Analysis: Users can input symptoms to receive a preliminary analysis and potential disease predictions.
