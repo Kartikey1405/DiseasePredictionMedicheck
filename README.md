@@ -3,6 +3,7 @@ Overview
 The AI-Powered Symptom Checker is a web application designed to analyze user-reported symptoms and provide potential disease predictions along with recommendations for further action. By leveraging K-Nearest Neighbors (KNN) machine learning algorithms, this tool aims to enhance health literacy, improve user experience, and promote timely healthcare interventions.
 
 Demonstration video: https://youtu.be/W9iGcD9pTzU?si=Vrtj20tWelxv2z9s
+https://github.com/user-attachments/assets/3616c604-bb62-48b4-a326-8d19e1f23e2d
 
 PPT presentation: https://mujmanipal-my.sharepoint.com/:p:/g/personal/kanak_23fe10cse00232_muj_manipal_edu/EUVmqZHuWjhMsgUBYEj5ZKoB_HEgNXKp5fxr8ZdwuaikRg?e=ZvgzEY
 
