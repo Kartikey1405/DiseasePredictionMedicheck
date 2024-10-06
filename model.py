@@ -33,6 +33,6 @@ def predict_disease(symptoms):
     for index in top_2_indices:
         disease_name = model.classes_[index]
         probability = probabilities[0][index] * 100  # Convert to percentage
-        top_diseases.append((disease_name, f"{probability:.0f}%"))  # Format as integer percentage
+        top_2_diseases.append((disease_name, f"{probability:.0f}%"))  # Format as integer percentage
     
     return top_2_diseases
