@@ -39,7 +39,7 @@ def upload_dataset_to_cloudant():
         print(f"Error uploading dataset to Cloudant: {e}")
 
 # Load the trained model
-model, symptom_columns = load_model()
+model, scaler, symptom_columns = load_model()
 
 @app.route('/')
 def home():
