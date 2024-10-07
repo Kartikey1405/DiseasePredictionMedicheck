@@ -6,7 +6,8 @@ Demonstration video: https://youtu.be/W9iGcD9pTzU?si=Vrtj20tWelxv2z9s
 
 https://github.com/user-attachments/assets/3616c604-bb62-48b4-a326-8d19e1f23e2d
   
-PPT Link: https://drive.google.com/drive/folders/1ZXyIEl3cSG9AtZdsHX-0KxA__xFd3jzn?usp=sharing
+PPT Link:
+https://mujmanipal-my.sharepoint.com/:p:/g/personal/kanak_23fe10cse00232_muj_manipal_edu/EUVmqZHuWjhMsgUBYEj5ZKoB_HEgNXKp5fxr8ZdwuaikRg?e=ZvgzEY
 
 Features:
 
