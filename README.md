@@ -9,6 +9,9 @@ https://github.com/user-attachments/assets/3616c604-bb62-48b4-a326-8d19e1f23e2d
 PPT Link:
 https://mujmanipal-my.sharepoint.com/:p:/g/personal/kanak_23fe10cse00232_muj_manipal_edu/EUVmqZHuWjhMsgUBYEj5ZKoB_HEgNXKp5fxr8ZdwuaikRg?e=ZvgzEY
 
+Drive link:
+https://drive.google.com/drive/folders/1ZXyIEl3cSG9AtZdsHX-0KxA__xFd3jzn
+
 Features:
 
 Symptom Analysis: Users can input symptoms to receive a preliminary analysis and potential disease predictions.
